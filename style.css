@@ -95,7 +95,7 @@ header {
     top: 100%;
     right: -100%;
     width: 270px;
-    height: 100vh;
+    height: auto;
     background: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -119,8 +119,8 @@ header {
     right: 2%;
   }
 }
-
 /* INDEX BODY START */
+
 .headerimg {
   position: relative;
   width: 100%;
@@ -169,6 +169,7 @@ header {
   border-radius: 8px;
   color: #fff;
 }
+
 /* INDEX BODY END*/
 
 /* FOR GALLERY */
@@ -340,6 +341,7 @@ body {
 }
 /* END OF GALLERY */
 /* CONTACT US */
+
 #contact {
   padding: 5rem 0;
 }
@@ -395,8 +397,10 @@ body {
 .form-container a {
   font-size: 1.3rem;
 }
+
 /* END OF CONTACT US */
 /* FOOTER START */
+
 .footer {
   background-color: var(--main-color);
   width: 100%;
@@ -518,4 +522,5 @@ body {
     margin: 10px 0 0 0;
   }
 }
+
 /* FOOTER END */
