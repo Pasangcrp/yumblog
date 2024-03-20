@@ -10,6 +10,11 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <!-- Fonts Links For Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <!-- IMPORT OF Madimi One font from Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,8 +30,8 @@
       /></a>
       <ul class="navbar">
         <li><a href="index.html">Home</a></li>
-        <li><a href="blogdetails.html">Blog Details</a></li>
         <li><a class="active" href="bloglist.html">Blog Lists</a></li>
+        <li><a href="blogdetails.html">Blog Details</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contacts.html">Contact Us</a></li>
       </ul>
@@ -36,9 +41,36 @@
       </div>
     </header>
 
-    <div class="page1">
-      <h1>BlogList</h1>
-    </div>
+    <section class="threecards container flex">
+      <div class="tcard">
+        <div class="tcardimg">
+          <img src="./assets/headercards/img2.jpg" alt="" />
+          <span class="fa fa-star"></span>
+        </div>
+        <div class="tcardinfo flex">
+          <label class="tlabel">Salad</label>
+          <h2>Sunday Best Fruit Salad With Best Recipe</h2>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            atque aspernatur nihil dolor error quam sint, mollitia facere labore
+            sit.
+          </p>
+          <ul class="flex">
+            <li><i class="fa-solid fa-user"></i>by</li>
+            <li><i class="fa-regular fa-clock"></i>10 Mins</li>
+            <li><i class="fa-regular fa-heart"></i>25 Likes</li>
+          </ul>
+          <a href="/" class="tcardbtn">Read More</a>
+        </div>
+      </div>
+    </section>
     <!-- FOOTER SECTION STARTS HERE -->
     <section class="footer">
       <div class="footer-row">
