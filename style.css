@@ -335,13 +335,143 @@ header {
 /* INDEX BODY END*/
 
 /* FOR BLOG LIST */
-.blog-list {
+
+/* .blog-list {
   display: flex;
   position: relative;
   width: 100%;
   height: 100%;
   overflow: hidden;
   margin-bottom: 20px;
+} */
+.threecards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 0 20px;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.tcard {
+  position: relative;
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ede9e9;
+  border-radius: 8px;
+  padding: 20px;
+}
+.tcardimg {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.tcardimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.tcard:hover .tcardimg img {
+  transform: scale(1.1);
+}
+.tcardimg span {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  padding: 10px;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.tcardimg span:hover {
+  color: orangered;
+}
+.tcardinfo {
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5px;
+}
+.tlabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+.star-rating,
+.bloginfo,
+.tcardbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tcardinfo h2 {
+  font-size: 20px;
+  color: var(--btn-color);
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+}
+.fa-star {
+  color: #555;
+}
+.checked {
+  color: yellow;
+}
+.tcardinfo p {
+  font-size: 14px;
+  line-height: 22px;
+  color: aqua;
+  text-align: center;
+}
+.tcardinfo ol {
+  gap: 12px;
+}
+.tcardinfo ol li {
+  font-size: 12px;
+  cursor: pointer;
+}
+.tcardinfo ol li i {
+  margin-right: 5px;
+  color: orange;
+}
+.tcardinfo ol li:hover {
+  color: #4aa619;
+}
+.tcardbtn {
+  position: relative;
+  background-color: #afe311;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+.tcardbtn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #95c11e;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.tcardbtn:hover::before {
+  transform: scale(1);
 }
 /* FOR BLOG LIST */
 
