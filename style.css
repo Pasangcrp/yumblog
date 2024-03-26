@@ -332,6 +332,17 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 8px;
 }
+
+.homevideo {
+  height: 700px;
+  width: 100%;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 /* INDEX BODY END*/
 
 /* FOR BLOG LIST */
@@ -405,6 +416,7 @@ header {
   justify-content: center;
   font-weight: 600;
   font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .star-rating,
 .bloginfo,
@@ -429,7 +441,7 @@ header {
 .tcardinfo p {
   font-size: 14px;
   line-height: 22px;
-  color: aqua;
+  color: #ffffff;
   text-align: center;
 }
 .tcardinfo ol {
