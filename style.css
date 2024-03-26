@@ -228,6 +228,17 @@ header {
   box-shadow: 0 0 10px #fff;
   border: none;
 }
+.slider {
+  display: flex;
+  align-items: center;
+  height: 18rem;
+  width: 100%;
+}
+marquee h2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--text-color);
+  font-size: 55px;
+}
 
 .homevideo {
   height: 700px;
