@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <!-- Fonts Links For Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <!-- IMPORT OF Madimi One font from Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,13 +41,12 @@
         <div class="bx bx-menu" id="menu-icon"></div>
       </div>
     </header>
-    <section id="contact">
-      <div class="contact-container container">
-        <div class="contact-img">
-          <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
-        </div>
+
+    <!-- <section id="contact">
+      <div class="contact-container">
+
         <div class="form-container">
-          <h2>Contact Us</h2>
+          <h2>We're here for you</h2>
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="E-Mail" />
           <textarea
@@ -50,10 +54,49 @@
             rows="6"
             placeholder="Type Your Message"
           ></textarea>
-          <a href="#" class="btn btn-primary">Submit</a>
+          <a href="#" class="contactbtn">Submit</a>
         </div>
       </div>
-    </section>
+    </section> -->
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <p>Have a question or suggestion? Reach out to us!</p>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="contact-container2">
+      <h2 class="contacth2">REACH US DIRECTLY</h2>
+      <hr class="contacthr" />
+      <ul class="contactlist">
+        <li>
+          <i class="fa-regular fa-envelope"></i>
+          <a
+            class="btn"
+            href="mailto:chaliseuzzwol@gmail.com"
+            title="chaliseuzzwol@gmail.com"
+            >chaliseuzzwol@gmail.com</a
+          >
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <a class="btn" href="tel: +97798256780" title="phnumber"
+            >+97798256780</a
+          >
+        </li>
+      </ul>
+    </div>
     <!-- FOOTER SECTION STARTS HERE -->
     <section class="footer">
       <div class="footer-row">
@@ -108,6 +151,7 @@
             <i class="fa-brands fa-linkedin"></i>
             <i class="fa-brands fa-github"></i>
           </div>
+          <p>&copy; 2024 YumBlog. All rights reserved.</p>
         </div>
       </div>
     </section>
